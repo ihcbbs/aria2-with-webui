@@ -8,7 +8,12 @@ fi
 if [ ! -f /conf/on-complete.sh ]; then
 	cp /conf-copy/on-complete.sh /conf/on-complete.sh
 fi
-
+if [ ! -f /conf/supervisord.conf  ]; then
+	cp /conf-copy/supervisord.conf /conf/supervisord.conf 
+fi
+if [ ! -f /conf/on-complete.sh ]; then
+	cp /conf-copy/dht.dat /conf/dht.dat
+fi
 chmod +x /conf/on-complete.sh
 touch /conf/aria2.session
 
