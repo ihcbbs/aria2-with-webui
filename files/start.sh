@@ -17,5 +17,5 @@ fi
 chmod +x /conf/on-complete.sh
 touch /conf/aria2.session
 
-darkhttpd /aria2-webui --port 80 &
-darkhttpd /data --port 8080 
+darkhttpd /aria2-webui --port 680 &
+darkhttpd /data --port 6880 
